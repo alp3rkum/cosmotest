@@ -42,7 +42,7 @@ smollm2-360m-instruct-q8_0 => CosmoTest 1.9
 Qwen2.5-0.5B-Instruct-Q6_K_L => CosmoTest 3.46
 Qwen3-0.6B-Q4_0 => CosmoTest 5.08
 google_gemma-3-1b-it-IQ4_XS => CosmoTest 5.06
---------------------------------------------------------
+
 Google Gemini 3 Flash => CosmoTest 6.66 (non-local)
 Google Gemini 3 Thinking => CosmoTest 7.16 (non-local)
 Google Gemini 3.1 Pro => CosmoTest 7.41 (non-local)
