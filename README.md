@@ -50,9 +50,11 @@ ChatGPT (Standard) => CosmoTest 6.96 (non-local)
 Qwen3.6-Plus => CosmoTest 5.89 (non-local)
 
 TR: Bu test sonuçları, Qwen2.5 üzerinde yaptığım farklı kuantizasyonlarla yapılan testlerde de aynı skorda çıkmıştır. Dolayısıyla CosmoTest'i yapan bir modelin vereceği sonuç kuantizasyondan bağımsızdır denilebilir.
+
 EN: These test results were the same as those obtained in tests I conducted with different quantizations on Qwen2.5. Therefore, it can be said that the result given by a model performing CosmoTest is independent of the quantization.
 
 ### How To Test
 
 TR: Bu benchmarkı geliştirirken lokalde Llama.cpp ile elimdeki lokal GGUF modelleriyle llama-server açtıktan sonra llama_runner.py'yi komut isteminde çalıştırdım. Ardından çıkan sonucu llama_valer.py çalıştırarak değerlendirdim. ChatGPT, Gemini, Qwen Chat gibi İnternet tabanlı chatbot uygulamalarında, deneme için cosmotest.jsonl (Qwen Chat için .json) ve test_outputs.json dosyalarını mesaja eklenti olarak iliştirerek modele cosmotest dosyasındaki promptları işleyip sonuçları aynen test_outputs.json'daki gibi vermesini isteyerek testinizi gerçekleştirebilirsiniz.
+
 EN: While developing this benchmark, I created a llama-server locally using Llama.cpp with my existing local GGUF models, then ran llama_runner.py in the command prompt. Afterwards, I evaluated the output by running llama_valer.py. For web-based chatbot applications like ChatGPT, Gemini, and Qwen Chat, you can perform your test by attaching cosmotest.jsonl (or .json for Qwen Chat) and test_outputs.json files as attachments to messages, instructing the model to process the prompts from the cosmotest file and return the results exactly as in test_outputs.json.
