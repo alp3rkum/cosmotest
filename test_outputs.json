@@ -1,0 +1,68 @@
+[
+ {
+  "key": 0,
+  "prompt": "### Instruction:\nWrite a short text listing the planets in the solar system.\n\n### Constraints:\n- Must include a list of planets.\n\n### Response:\n ",
+  "response": "The planets in the solar system are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.",
+  "duration": 0.9
+ },
+ {
+  "key": 1,
+  "prompt": "### Instruction:\nWrite a short text listing the planets in the solar system.\n\n### Constraints:\n- Do NOT use the word 'Earth' anywhere in your response.\n\n### Response:\n ",
+  "response": "The planets in the solar system are Mercury, Venus, Mars, Jupiter, Saturn, Uranus, and Neptune.",
+  "duration": 0.8
+ },
+ {
+  "key": 2,
+  "prompt": "### Instruction:\nList the planets in the solar system (No Earth).\n\n### Constraints:\n- Output MUST be in valid JSON format only.\n- Do NOT include any introductory or concluding text.\n- The word 'Earth' is strictly forbidden.\n\n### Response:\n ",
+  "response": "[\"Mercury\",\"Venus\",\"Mars\",\"Jupiter\",\"Saturn\",\"Uranus\",\"Neptune\"]",
+  "duration": 1.1
+ },
+ {
+  "key": 3,
+  "prompt": "### Instruction:\nList 5 planets in the solar system as a JSON object.\n\n### Constraints:\n- For each planet, write a description that is EXACTLY 10 words long.\n- Output MUST be valid JSON only.\n- The word 'Earth' is forbidden.\n\n### Response:\n ",
+  "response": "{\"planets\":[{\"name\":\"Mercury\",\"description\":\"Small rocky world travels quickly around the bright yellow sun.\"},{\"name\":\"Venus\",\"description\":\"Thick toxic clouds hide the extremely hot surface below us.\"},{\"name\":\"Mars\",\"description\":\"Red dusty terrain shows ancient volcanoes and deep canyons today.\"},{\"name\":\"Jupiter\",\"description\":\"Massive gas giant holds giant storms and many orbiting moons.\"},{\"name\":\"Saturn\",\"description\":\"Bright icy rings circle a massive planet with many moons.\"}]}",
+  "duration": 1.7
+ },
+ {
+  "key": 4,
+  "prompt": "### Instruction:\nList 5 planets in the solar system as a JSON object.\n\n### Constraints:\n- Each 10-word description MUST start with the letter 'G'.\n- Output MUST be valid JSON only.\n- The word 'Earth' is forbidden.\n\n### Response:\n ",
+  "response": "{\"planets\":[{\"name\":\"Mercury\",\"description\":\"Great rocky world travels quickly around the bright yellow sun.\"},{\"name\":\"Venus\",\"description\":\"Giant toxic clouds hide the extremely hot surface below us.\"},{\"name\":\"Mars\",\"description\":\"Grand dusty terrain shows ancient volcanoes and deep canyons today.\"},{\"name\":\"Jupiter\",\"description\":\"Great gas giant holds massive storms and many orbiting moons.\"},{\"name\":\"Saturn\",\"description\":\"Glorious icy rings circle a massive planet with many moons.\"}]}",
+  "duration": 2.2
+ },
+ {
+  "key": 5,
+  "prompt": "### Instruction:\nList 5 planets in the solar system as a JSON object.\n\n### Constraints:\n- Descriptions must be 10 words and start with 'G'.\n- Add a final key 's_count' indicating the total number of times the letter 'S' appears in the JSON.\n- Output MUST be valid JSON only.\n- The word 'Earth' is forbidden.\n\n### Response:\n ",
+  "response": "{\"planets\":[{\"name\":\"Mercury\",\"description\":\"Great rocky planet travels quickly around the bright yellow sun.\"},{\"name\":\"Venus\",\"description\":\"Giant toxic clouds hide the extremely hot surface below us.\"},{\"name\":\"Mars\",\"description\":\"Grand dusty terrain shows ancient volcanoes and deep canyons today.\"},{\"name\":\"Jupiter\",\"description\":\"Great gas giant holds massive storms and many orbiting moons.\"},{\"name\":\"Saturn\",\"description\":\"Glorious icy rings circle a massive planet with many moons.\"}],\"s_count\":33}",
+  "duration": 3.0
+ },
+ {
+  "key": 6,
+  "prompt": "### Instruction:\nList 5 planets in the solar system as a JSON object.\n\n### Constraints:\n- Planets must be ordered by their distance from the Sun, but in REVERSE (furthest to nearest).\n- Each description must be exactly 10 words and start with 'G'.\n- Output MUST be valid JSON only.\n- The word 'Earth' is forbidden.\n\n### Response:\n ",
+  "response": "{\"planets\":[{\"name\":\"Neptune\",\"description\":\"Giant blue world drifts far from warm central star.\"},{\"name\":\"Uranus\",\"description\":\"Great tilted sphere spins slowly in cold dark space.\"},{\"name\":\"Saturn\",\"description\":\"Glorious bright rings circle a massive gas ball today.\"},{\"name\":\"Jupiter\",\"description\":\"Giant gas sphere holds huge storms and many moons.\"},{\"name\":\"Mars\",\"description\":\"Great red terrain shows old volcanoes and dry rivers.\"}]}",
+  "duration": 2.5
+ },
+ {
+  "key": 7,
+  "prompt": "### Instruction:\nList 5 planets in the solar system as a JSON object.\n\n### Constraints:\n- Descriptions must be exactly 12 words long.\n- Each description must include the planet name twice, and the second mention must be in ALL CAPS.\n- The word 'Earth' is forbidden.\n- Output MUST be valid JSON only.\n- All JSON keys must be written in ALL UPPERCASE.\n- For each planet, add a key 'MOON_COUNT' specifying the known number of its natural satellites.\n- The total number of words in the entire JSON must be an even number.\n\n### Response:\n ",
+  "response": "{\"PLANETS\":[{\"NAME\":\"Mercury\",\"DESCRIPTION\":\"Mercury travels fast around sun while MERCURY shows zero natural moons.\",\"MOON_COUNT\":0},{\"NAME\":\"Venus\",\"DESCRIPTION\":\"Venus hides under thick clouds while VENUS rotates backwards very slowly.\",\"MOON_COUNT\":0},{\"NAME\":\"Mars\",\"DESCRIPTION\":\"Mars appears red and dusty while MARS possesses two small moons.\",\"MOON_COUNT\":2},{\"NAME\":\"Jupiter\",\"DESCRIPTION\":\"Jupiter holds massive storms while JUPITER controls ninety five large moons.\",\"MOON_COUNT\":95},{\"NAME\":\"Saturn\",\"DESCRIPTION\":\"Saturn displays bright rings while SATURN orbits with many distant moons.\",\"MOON_COUNT\":146}]}",
+  "duration": 3.8
+ },
+ {
+  "key": 8,
+  "prompt": "### Instruction:\nList 5 planets in the solar system as a JSON object.\n\n### Constraints:\n- Descriptions must be 10 words and all words must be in alphabetical order (A-Z) within each description.\n- Output MUST be valid JSON only.\n- The word 'Earth' is forbidden.\n- Each planet name must be written in REVERSE (e.g., 'Srunu')\n- Add a key 'vowel_count' for each planet showing total vowels in its description.\n- Descriptions must not contain the letter 'k'.\n- The JSON must contain exactly 5 planet objects.\n\n### Response:\n ",
+  "response": "{\"planets\":[{\"name\":\"yrucreM\",\"description\":\"A bright cold deep empty fog green huge icy jungle.\",\"vowel_count\":13},{\"name\":\"suneV\",\"description\":\"All blue cars drive early fast great hot icy jets.\",\"vowel_count\":13},{\"name\":\"sraM\",\"description\":\"Bright dark empty fog green huge icy jungle loud moon.\",\"vowel_count\":13},{\"name\":\"retipuJ\",\"description\":\"Cold deep fast green hot icy large moon night open.\",\"vowel_count\":13},{\"name\":\"nrutaS\",\"description\":\"Dark empty fog green huge icy jungle loud moon nice.\",\"vowel_count\":13}]}",
+  "duration": 4.2
+ },
+ {
+  "key": 9,
+  "prompt": "### Instruction:\nWrite a short paragraph about the solar system.\n\n### Constraints:\n- The paragraph must be exactly 50 words long.\n- Every sentence must start with a different letter of the alphabet.\n- You are forbidden from using any word that contains the letter 'e'.\n- The word 'Earth' is strictly forbidden.\n- The paragraph must contain exactly 3 exclamation marks (!).\n- The last word of the paragraph must start with the letter 'Z'.\n- No numbers or digits are allowed in the text.\n\n### Response:\n ",
+  "response": "A dark sky shows many bright stars shining far away! Big cold rocks spin round hot sun fast now! Cloudy winds push dust past gray moons today! Deep paths glow softly across our very wide cosmic void. Swift silver ships fly high toward a far very bright zenith.",
+  "duration": 5.1
+ },
+ {
+  "key": 10,
+  "prompt": "### Instruction:\nWrite a detailed story about a space traveler visiting the outer planets of our solar system.\n\n### Constraints:\n- The story must be exactly 100 words long.\n- The story must be divided into exactly 4 sentences.\n- Every sentence must start with the letter 'S'.\n- You must include the name of at least 3 planets (excluding Earth).\n- The word 'Earth' is forbidden.\n- The story must not contain any commas (',').\n- The final word of the story must be 'Void'.\n- Every sentence must contain exactly one color name (e.g., red, blue, golden).\n\n### Response:\n ",
+  "response": "Silent craft glides past Jupiter while blue lights flash across dark hulls during long quiet journey through very cold empty vast dark silent deep space. Slow ships drift toward Saturn while gold rings shine bright against black clouds during very fast smooth steady flight over far away giant worlds. Soon voyager approaches Neptune while red storms swirl heavy across cold air during quite slow steady forward motion near very far dark edge. Swift probes leave outer systems while gray dust floats away into deep black regions until quite calm steady motion over wide silence meets endless Void",
+  "duration": 6.4
+ }
+]
